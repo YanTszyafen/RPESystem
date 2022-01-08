@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
+    'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'RPESystem.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -109,19 +111,23 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'europe/moscow'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#setting for path of static sources
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static'),
+]
 
 #Setting for redis
 CACHES = {
@@ -143,3 +149,58 @@ CACHES = {
 # session: database -> redis
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
+
+#Log
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,  # Whether to disable the existing logger
+    'formatters': {  # Format of log information display
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(module)s %(lineno)d %(message)s'
+        },
+    },
+    'filters': {  # Filter logs
+        'require_debug_true': {  # Django only outputs logs in debug mode
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {  # Log processing method
+        'console': {  # Output log to terminal
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'file': {  # Output log to file
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/RPES.log'),  # Location of log files
+            'maxBytes': 300 * 1024 * 1024,
+            'backupCount': 10,
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {  # Loggers
+        'django': {  # A logger named django is defined
+            'handlers': ['console', 'file'],  # Can output logs to terminal and file at the same time
+            'propagate': True,  # Whether to continue to deliver log information
+            'level': 'INFO',  # The lowest log level received by the logger
+        },
+    }
+}
+
+#Replace the User of the system to use the User defined by ourselves
+#The configuration information is "Sub-application name. Model type"
+AUTH_USER_MODEL='users.User'
+
+#modify the default redirect link when user is not logged in
+LOGIN_URL='/login/'
+
+#setting for the uploaded pictures,save them to the directory 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+#setting for the unified route for image access.
+MEDIA_URL = '/meida/'

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title> Personal Information </title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/vue-2.5.16.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/axios-0.18.0.min.js' %}"></script>
+</head>
+
+<body>
+<div id="app">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <div>
+            <a class="navbar-brand" href="{% url 'home:index' %}">RPESystem</a>
+        </div>
+    </div>
+
+    <div class="navbar-collapse">
+        <ul class="nav navbar-nav">
+
+            <li class="nav-item dropdown" v-if="is_login">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" @click="show_menu_click">[[username]]</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: block" v-show="show_menu">
+                    <a class="dropdown-item" href="../static/write_blog.html">Write Blog</a>
+                    <a class="dropdown-item" href='{% url 'users:center' %}'>Personal Information</a>
+                    <a class="dropdown-item" href='{% url 'users:logout' %}'>Log out</a>
+                </div>
+            </li>
+
+            <li class="nav-item" v-else>
+                <a class="nav-link" href="{% url 'users:login' %}">Log in</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!--content-->
+<div class="container" style="margin-bottom: 20px">
+        <div class="row">
+            <div class="col-12">
+                <br>
+                <form method="post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                    <!-- username -->
+                <div class="form-group col-md-4">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" disabled="disabled" id="username" name="username" value="{{ username }}" >
+                </div>
+                <br> <div class="col-md-4">Avatar</div>
+                    {% if avatar %}
+                        <img src="{{ avatar }}" style="max-width: 20%;" class="col-md-4"><br>
+                    {% else %}
+                        <img src="{% static 'img/avatar.jpg' %}" style="max-width: 20%;" class="col-md-4"><br>
+                    {% endif %}
+
+                    <!-- avatar -->
+                    <div class="form-group col-md-4">
+                        <label for="avatar">Upload avatar</label>
+                        <input type="file" class="form-control-file" name="avatar" id="avatar">
+                    </div>
+
+                    <!-- phone -->
+{#                    <div class="form-group col-md-4">#}
+{#                        <label for="phone">Phone number</label>#}
+{#                        <input type="text" class="form-control" disabled="disabled" id="phone" name="phone" value="{{ mobile }}">#}
+{#                    </div>#}
+                    <!-- desc -->
+                    <div class="form-group col-md-4">
+                        <label for="desc">Introduction</label>
+
+                        <textarea type="text" class="form-control" id="desc" name="desc" rows="12" >{{ user_desc }}</textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-left: 12px" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer -->
+<footer class="py-3 bg-dark" id="footer">
+    <div class="container">
+        <h5 class="m-0 text-center text-white">Copyright @ Yangjf</h5>
+    </div>
+</footer>
+</div>
+<!-- 引入js -->
+<script type="text/javascript" src="{% static 'js/host.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/common.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/center.js' %}"></script>
+</body>
+
+</html>

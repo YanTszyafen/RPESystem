@@ -1,0 +1,1246 @@
+INFO 2022-01-08 17:11:24,450 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:12:52,065 urls 27 info
+INFO 2022-01-08 17:12:52,070 basehttp 154 "GET / HTTP/1.1" 200 4
+INFO 2022-01-08 17:22:58,741 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:23:00,554 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2022-01-08 17:26:38,757 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:26:40,254 basehttp 154 "GET / HTTP/1.1" 200 16348
+WARNING 2022-01-08 17:26:47,374 log 228 Not Found: /index
+WARNING 2022-01-08 17:26:47,374 basehttp 154 "GET /index HTTP/1.1" 404 1957
+INFO 2022-01-08 17:28:51,433 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\RPESystem\urls.py changed, reloading.
+INFO 2022-01-08 17:28:52,404 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:29:22,000 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\RPESystem\urls.py changed, reloading.
+INFO 2022-01-08 17:29:23,492 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:30:05,050 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:36:34,522 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:36:46,608 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:36:47,920 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2022-01-08 17:38:08,069 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2022-01-08 17:38:17,335 basehttp 154 "GET /static/index.html HTTP/1.1" 200 11264
+INFO 2022-01-08 17:38:17,404 basehttp 154 "GET /static/img/1.jpg HTTP/1.1" 200 78682
+INFO 2022-01-08 17:50:14,988 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:51:41,566 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:52:45,164 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:53:18,718 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:55:36,112 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:56:19,736 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:56:25,481 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:57:52,788 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\RPESystem\settings.py changed, reloading.
+INFO 2022-01-08 17:57:55,411 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 17:59:04,574 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:00:32,803 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py changed, reloading.
+INFO 2022-01-08 18:00:34,707 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:02:13,404 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:06:04,676 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-01-08 18:06:06,228 log 228 Not Found: /
+WARNING 2022-01-08 18:06:06,229 basehttp 154 "GET / HTTP/1.1" 404 2097
+INFO 2022-01-08 18:06:31,818 basehttp 154 "GET /register HTTP/1.1" 301 0
+ERROR 2022-01-08 18:06:32,047 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'home'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py", line 16, in get
+    return render(request, 'register.html')
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'home' is not a registered namespace
+ERROR 2022-01-08 18:06:32,055 basehttp 154 "GET /register/ HTTP/1.1" 500 144568
+INFO 2022-01-08 18:10:30,373 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py changed, reloading.
+INFO 2022-01-08 18:10:32,051 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-01-08 18:10:37,706 log 228 Not Found: /
+WARNING 2022-01-08 18:10:37,707 basehttp 154 "GET / HTTP/1.1" 404 2097
+INFO 2022-01-08 18:23:00,551 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:23:32,514 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:23:34,788 basehttp 154 "GET / HTTP/1.1" 200 11500
+INFO 2022-01-08 18:25:08,305 basehttp 154 "GET / HTTP/1.1" 200 11500
+ERROR 2022-01-08 18:25:20,474 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py", line 16, in get
+    return render(request, 'register.html')
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2022-01-08 18:25:20,477 basehttp 154 "GET /register/ HTTP/1.1" 500 144667
+INFO 2022-01-08 18:29:47,014 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py changed, reloading.
+INFO 2022-01-08 18:29:50,410 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:31:29,857 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\views.py changed, reloading.
+INFO 2022-01-08 18:31:32,351 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:32:58,408 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\urls.py changed, reloading.
+INFO 2022-01-08 18:33:06,794 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:33:39,604 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:33:42,151 basehttp 154 "GET / HTTP/1.1" 200 11480
+INFO 2022-01-08 18:33:50,930 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 18:33:50,968 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 18:33:51,069 basehttp 154 "GET /imagecode/?uuid=82c42c9b-9e90-4093-8939-ff0e88dbffda HTTP/1.1" 200 3625
+INFO 2022-01-08 18:33:57,764 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-08 18:39:29,127 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:39:32,276 basehttp 154 "GET / HTTP/1.1" 200 11480
+INFO 2022-01-08 18:41:53,989 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-01-08 18:41:55,272 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py", line 9, in get
+    return render(request, 'index.html')
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'writeblog' not found. 'writeblog' is not a valid view function or pattern name.
+ERROR 2022-01-08 18:41:55,276 basehttp 154 "GET / HTTP/1.1" 500 150140
+INFO 2022-01-08 18:43:13,481 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:43:14,650 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 18:50:34,525 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:50:35,954 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 18:50:42,595 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 18:50:42,642 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 18:50:42,712 basehttp 154 "GET /imagecode/?uuid=d5d928d1-d6ba-42b9-99ab-f890972e1cea HTTP/1.1" 200 3311
+INFO 2022-01-08 18:50:47,740 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 18:50:52,668 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-08 18:50:55,336 basehttp 154 "GET /forgetpassword/ HTTP/1.1" 200 4224
+INFO 2022-01-08 18:50:55,373 basehttp 154 "GET /static/js/forget_password.js HTTP/1.1" 200 6403
+INFO 2022-01-08 18:50:55,401 basehttp 154 "GET /imagecode/?uuid=a6fc79c0-1b5c-4bec-9636-e6278acb68fa HTTP/1.1" 200 3061
+INFO 2022-01-08 18:50:58,194 basehttp 154 "GET /imagecode/?uuid=69c49130-0f9f-45e1-b22d-062e5c4c79dc HTTP/1.1" 200 3100
+INFO 2022-01-08 18:55:56,569 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:55:58,295 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 18:56:02,800 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-08 18:56:02,807 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 18:56:04,949 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-08 18:57:33,308 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 18:57:34,995 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 18:57:38,548 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-08 18:57:42,772 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 18:57:42,866 basehttp 154 "GET /imagecode/?uuid=11b4bb0f-e911-4773-b845-8197aecce33f HTTP/1.1" 200 3358
+INFO 2022-01-08 18:58:06,445 basehttp 154 "GET /imagecode/?uuid=479beaa7-78f1-426e-ad16-196430a9d3fb HTTP/1.1" 200 3590
+INFO 2022-01-08 19:00:42,337 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:00:48,980 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+WARNING 2022-01-08 19:00:56,677 log 228 Bad Request: /login/
+WARNING 2022-01-08 19:00:56,678 basehttp 154 "POST /login/ HTTP/1.1" 400 27
+INFO 2022-01-08 19:01:07,296 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:01:07,401 basehttp 154 "GET /imagecode/?uuid=4f6587ad-2904-4346-8bcd-9d5fa00c9670 HTTP/1.1" 200 3043
+WARNING 2022-01-08 19:01:25,731 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-08 19:02:57,749 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:02:57,793 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:02:57,794 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:02:57,797 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:02:57,802 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:02:57,803 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:02:57,807 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:02:57,860 basehttp 154 "GET /imagecode/?uuid=986189ab-d159-4cdc-b393-e5e8efce90a6 HTTP/1.1" 200 3087
+WARNING 2022-01-08 19:02:57,885 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:02:57,885 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:02:58,853 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:02:58,886 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:02:58,888 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:02:58,889 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:02:58,889 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:02:58,891 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:02:58,893 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:02:58,936 basehttp 154 "GET /imagecode/?uuid=c6d2fc64-003b-45e8-9657-6f4fa17081b1 HTTP/1.1" 200 3367
+WARNING 2022-01-08 19:02:58,962 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:02:58,963 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:03:00,834 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:03:00,870 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:03:00,873 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:03:00,873 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:03:00,874 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:03:00,876 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:03:00,877 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:03:00,924 basehttp 154 "GET /imagecode/?uuid=d3317c45-c0dd-425d-beed-7b76c9dff90a HTTP/1.1" 200 2720
+WARNING 2022-01-08 19:03:00,946 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:03:00,946 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:03:21,858 basehttp 154 "GET /imagecode/?uuid=4f2714ba-45a1-4bff-9885-4543c6b457fb HTTP/1.1" 200 3303
+INFO 2022-01-08 19:03:25,049 basehttp 154 "GET /imagecode/?uuid=30b812bc-a38e-4e36-8f57-54e5a09ee352 HTTP/1.1" 200 3004
+WARNING 2022-01-08 19:03:36,056 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-08 19:03:36,063 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 562427
+INFO 2022-01-08 19:16:02,744 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:16:04,506 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:16:04,536 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:04,539 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:04,570 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:04,571 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:08,441 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+WARNING 2022-01-08 19:16:13,776 log 228 Bad Request: /login/
+WARNING 2022-01-08 19:16:13,777 basehttp 154 "POST /login/ HTTP/1.1" 400 27
+INFO 2022-01-08 19:16:18,091 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:18,123 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:18,176 basehttp 154 "GET /imagecode/?uuid=bc963cfd-725f-4c28-96ae-9295e323a218 HTTP/1.1" 200 3838
+INFO 2022-01-08 19:16:39,198 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:39,228 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:39,231 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:39,232 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:39,232 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:39,233 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:39,235 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:39,304 basehttp 154 "GET /imagecode/?uuid=980c1cf7-996f-4ff8-bf0d-eff4c0d08779 HTTP/1.1" 200 3232
+WARNING 2022-01-08 19:16:39,332 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:39,334 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:40,535 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:40,564 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:40,565 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:40,565 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:40,567 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:40,572 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:40,573 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:40,625 basehttp 154 "GET /imagecode/?uuid=0449a441-087c-4a1d-8f65-e146b5afdc6c HTTP/1.1" 200 3108
+WARNING 2022-01-08 19:16:40,650 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:40,651 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:40,803 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:40,848 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:40,848 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:40,851 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:40,852 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:40,862 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:40,864 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:40,923 basehttp 154 "GET /imagecode/?uuid=69be4fa6-fb69-49eb-9ec4-d28bf15d5125 HTTP/1.1" 200 3259
+WARNING 2022-01-08 19:16:40,938 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:40,939 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:40,999 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:41,032 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:41,034 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:41,035 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:41,036 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:41,039 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:41,046 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:41,081 basehttp 154 "GET /imagecode/?uuid=0ff8d84a-3af8-44cf-8285-e417e1819321 HTTP/1.1" 200 3205
+WARNING 2022-01-08 19:16:41,101 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:41,102 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:41,200 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:41,227 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:41,227 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:41,228 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:41,229 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:41,230 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:41,231 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:41,280 basehttp 154 "GET /imagecode/?uuid=10839405-7757-4342-a2aa-abd96ff258f2 HTTP/1.1" 200 3412
+WARNING 2022-01-08 19:16:41,296 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:41,296 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:41,364 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:41,398 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:41,401 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:41,402 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:41,403 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:41,406 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:41,409 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:41,455 basehttp 154 "GET /imagecode/?uuid=f674e45e-02c4-4595-9cc6-acfec477c3df HTTP/1.1" 200 3337
+WARNING 2022-01-08 19:16:41,469 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:41,470 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+INFO 2022-01-08 19:16:41,526 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:16:41,554 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:16:41,562 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:16:41,564 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2022-01-08 19:16:41,564 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:16:41,566 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+INFO 2022-01-08 19:16:41,567 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:16:41,597 basehttp 154 "GET /imagecode/?uuid=ec8f6040-a1b3-4b51-8ad9-d36143e7ead7 HTTP/1.1" 200 3040
+WARNING 2022-01-08 19:16:41,614 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:16:41,614 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3174
+WARNING 2022-01-08 19:17:11,723 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-08 19:17:11,733 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 562427
+INFO 2022-01-08 19:26:01,356 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:26:02,894 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:26:18,072 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:26:19,411 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:26:24,442 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-08 19:26:24,450 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:26:25,538 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-08 19:26:27,317 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-08 19:26:27,432 basehttp 154 "GET /imagecode/?uuid=57f54ef2-1898-4386-a03e-01f173fcc7d9 HTTP/1.1" 200 3159
+INFO 2022-01-08 19:26:51,799 basehttp 154 "POST /register/ HTTP/1.1" 302 0
+INFO 2022-01-08 19:26:51,805 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:26:57,242 basehttp 154 "GET /center/ HTTP/1.1" 200 3604
+INFO 2022-01-08 19:26:57,264 basehttp 154 "GET /static/js/center.js HTTP/1.1" 200 501
+INFO 2022-01-08 19:26:57,264 basehttp 154 "GET /static/img/avatar.jpg HTTP/1.1" 200 25249
+WARNING 2022-01-08 19:27:00,824 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-08 19:27:00,844 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 562427
+INFO 2022-01-08 19:34:32,322 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:34:33,922 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:34:37,451 basehttp 154 "GET /center/ HTTP/1.1" 200 3537
+INFO 2022-01-08 19:34:37,499 basehttp 154 "GET /static/img/avatar.jpg HTTP/1.1" 200 25249
+INFO 2022-01-08 19:34:37,505 basehttp 154 "GET /static/js/center.js HTTP/1.1" 200 501
+INFO 2022-01-08 19:38:47,148 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:38:49,347 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:39:00,602 basehttp 154 "GET /center/ HTTP/1.1" 200 3537
+INFO 2022-01-08 19:39:36,188 basehttp 154 "POST /center/ HTTP/1.1" 302 0
+INFO 2022-01-08 19:39:36,229 basehttp 154 "GET /center/ HTTP/1.1" 200 3558
+WARNING 2022-01-08 19:39:36,254 log 228 Not Found: /meida/avatar/20223901/08/22/timg.jfif
+WARNING 2022-01-08 19:39:36,255 basehttp 154 "GET /meida/avatar/20223901/08/22/timg.jfif HTTP/1.1" 404 3252
+WARNING 2022-01-08 19:39:36,289 log 228 Not Found: /meida/avatar/20223901/08/22/timg.jfif
+WARNING 2022-01-08 19:39:36,290 basehttp 154 "GET /meida/avatar/20223901/08/22/timg.jfif HTTP/1.1" 404 3252
+WARNING 2022-01-08 19:39:40,300 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-08 19:39:40,305 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 562427
+INFO 2022-01-08 19:43:29,569 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\RPESystem\urls.py changed, reloading.
+INFO 2022-01-08 19:43:38,889 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-08 19:43:41,251 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:43:48,905 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-08 19:43:48,961 basehttp 154 "GET /static/common/common.css HTTP/1.1" 200 368
+INFO 2022-01-08 19:43:48,965 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 200 4048
+INFO 2022-01-08 19:43:48,969 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:43:48,965 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2022-01-08 19:43:48,973 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140884
+INFO 2022-01-08 19:43:48,976 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2022-01-08 19:43:48,978 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:43:49,000 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:43:49,012 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:43:49,016 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 547
+INFO 2022-01-08 19:43:49,020 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2934
+INFO 2022-01-08 19:43:49,028 basehttp 154 "GET /static/img/1.jpg HTTP/1.1" 200 78682
+WARNING 2022-01-08 19:43:49,677 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:43:49,677 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3300
+INFO 2022-01-08 19:43:53,232 basehttp 154 "GET /center/ HTTP/1.1" 200 3558
+WARNING 2022-01-08 19:43:53,280 log 228 Not Found: /meida/avatar/20223901/08/22/timg.jfif
+WARNING 2022-01-08 19:43:53,281 basehttp 154 "GET /meida/avatar/20223901/08/22/timg.jfif HTTP/1.1" 404 1870
+WARNING 2022-01-08 19:43:53,347 log 228 Not Found: /meida/avatar/20223901/08/22/timg.jfif
+WARNING 2022-01-08 19:43:53,348 basehttp 154 "GET /meida/avatar/20223901/08/22/timg.jfif HTTP/1.1" 404 1870
+INFO 2022-01-08 19:43:58,690 basehttp 154 "GET /center/ HTTP/1.1" 200 3558
+INFO 2022-01-08 19:43:58,729 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-08 19:43:58,730 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140884
+INFO 2022-01-08 19:43:58,732 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-08 19:43:58,742 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-08 19:43:58,747 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-08 19:43:58,774 basehttp 154 "GET /static/js/center.js HTTP/1.1" 200 501
+WARNING 2022-01-08 19:43:58,776 log 228 Not Found: /meida/avatar/20223901/08/22/timg.jfif
+WARNING 2022-01-08 19:43:58,777 basehttp 154 "GET /meida/avatar/20223901/08/22/timg.jfif HTTP/1.1" 404 1870
+WARNING 2022-01-08 19:43:58,832 log 228 Not Found: /favicon.ico
+WARNING 2022-01-08 19:43:58,832 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3300
+INFO 2022-01-08 19:44:07,927 basehttp 154 "POST /center/ HTTP/1.1" 302 0
+INFO 2022-01-08 19:44:07,966 basehttp 154 "GET /center/ HTTP/1.1" 200 3558
+INFO 2022-01-08 19:44:08,008 basehttp 154 "GET /meida/avatar/20224401/08/22/timg.jfif HTTP/1.1" 200 105214
+INFO 2022-01-14 16:50:49,458 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-14 16:50:53,345 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:50:53,477 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 200 4048
+INFO 2022-01-14 16:50:53,479 basehttp 154 "GET /static/common/common.css HTTP/1.1" 200 368
+INFO 2022-01-14 16:50:53,480 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140884
+INFO 2022-01-14 16:50:53,484 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2022-01-14 16:50:53,533 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2022-01-14 16:50:53,653 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2022-01-14 16:50:53,664 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2022-01-14 16:50:53,743 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2022-01-14 16:50:53,746 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2022-01-14 16:50:53,776 basehttp 154 "GET /static/img/1.jpg HTTP/1.1" 200 78682
+INFO 2022-01-14 16:50:53,803 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2934
+INFO 2022-01-14 16:50:53,807 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 547
+WARNING 2022-01-14 16:50:54,630 log 228 Not Found: /favicon.ico
+WARNING 2022-01-14 16:50:54,631 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3300
+WARNING 2022-01-14 16:50:59,402 basehttp 154 "GET /static/detail.html HTTP/1.1" 404 1657
+INFO 2022-01-14 16:51:02,376 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 16:51:02,424 basehttp 154 "GET /static/js/login.js HTTP/1.1" 200 683
+WARNING 2022-01-14 16:51:12,703 log 228 Bad Request: /login/
+WARNING 2022-01-14 16:51:12,703 basehttp 154 "POST /login/ HTTP/1.1" 400 27
+INFO 2022-01-14 16:51:54,787 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+WARNING 2022-01-14 16:52:05,014 log 228 Bad Request: /login/
+WARNING 2022-01-14 16:52:05,155 basehttp 154 "POST /login/ HTTP/1.1" 400 27
+WARNING 2022-01-14 16:52:41,585 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-14 16:53:11,627 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:53:14,024 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 16:53:16,933 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-14 16:53:18,405 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 3574
+WARNING 2022-01-14 16:53:40,390 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2022-01-14 16:54:04,509 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-14 16:54:06,485 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:54:08,759 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 16:54:12,645 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+ERROR 2022-01-14 16:54:21,093 basehttp 154 "GET /imagecode/?uuid=e8ae201a-d242-4528-8b58-f24f156005bd HTTP/1.1" 500 129697
+INFO 2022-01-14 16:57:51,419 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-14 16:57:53,513 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:57:55,342 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 16:58:03,903 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-01-14 16:58:03,910 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:58:06,222 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-14 16:58:06,228 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:58:07,030 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 16:58:08,344 basehttp 154 "GET /register/ HTTP/1.1" 200 4264
+INFO 2022-01-14 16:58:08,545 basehttp 154 "GET /imagecode/?uuid=41a9a93a-0b2b-4c64-b600-d4653f84de57 HTTP/1.1" 200 3525
+INFO 2022-01-14 16:58:26,646 basehttp 154 "POST /register/ HTTP/1.1" 302 0
+INFO 2022-01-14 16:58:26,652 basehttp 154 "GET / HTTP/1.1" 200 11487
+INFO 2022-01-14 16:58:31,743 basehttp 154 "GET /center/ HTTP/1.1" 200 3537
+INFO 2022-01-14 16:58:31,787 basehttp 154 "GET /static/img/avatar.jpg HTTP/1.1" 200 25249
+INFO 2022-01-14 16:58:31,798 basehttp 154 "GET /static/js/center.js HTTP/1.1" 200 501
+INFO 2022-01-14 20:31:57,772 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-01-14 20:31:59,773 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py", line 9, in get
+    return render(request, 'index.html')
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'writeads' not found. 'writeads' is not a valid view function or pattern name.
+ERROR 2022-01-14 20:31:59,784 basehttp 154 "GET / HTTP/1.1" 500 150177
+INFO 2022-01-14 20:34:04,307 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-14 20:34:05,748 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-14 20:34:09,627 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-14 20:34:09,641 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-14 20:34:10,448 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-14 20:34:20,213 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-01-14 20:34:20,219 basehttp 154 "GET / HTTP/1.1" 200 11474
+WARNING 2022-01-14 20:34:32,466 basehttp 154 "GET /static/detail.html HTTP/1.1" 404 1657
+INFO 2022-01-14 20:35:56,823 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-14 20:35:58,743 basehttp 154 "GET / HTTP/1.1" 200 11474
+WARNING 2022-01-14 20:36:01,103 basehttp 154 "GET /static/detail.html HTTP/1.1" 404 1657
+INFO 2022-01-14 20:36:03,655 basehttp 154 "GET /center/ HTTP/1.1" 200 3547
+INFO 2022-01-14 20:36:03,690 basehttp 154 "GET /meida/avatar/20224401/08/22/timg.jfif HTTP/1.1" 200 105214
+INFO 2022-01-14 20:36:05,540 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-14 20:36:08,596 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-15 01:33:13,955 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 01:36:08,473 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 01:37:11,281 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 11474
+WARNING 2022-01-15 01:37:14,779 basehttp 154 "GET /static/detail.html HTTP/1.1" 404 1657
+INFO 2022-01-15 01:37:21,133 basehttp 154 "GET /center/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:37:21,143 basehttp 154 "GET /login/?next=/center/ HTTP/1.1" 200 2988
+INFO 2022-01-15 01:37:33,551 basehttp 154 "POST /login/?next=/center/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:37:33,584 basehttp 154 "GET /center/ HTTP/1.1" 200 3547
+INFO 2022-01-15 01:37:39,751 basehttp 154 "GET /center/ HTTP/1.1" 200 3547
+INFO 2022-01-15 01:37:41,217 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-15 01:37:48,920 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-15 01:43:13,738 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 01:43:15,454 basehttp 154 "GET / HTTP/1.1" 200 11474
+INFO 2022-01-15 01:43:20,611 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:43:20,885 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1975
+INFO 2022-01-15 01:43:20,927 basehttp 154 "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+INFO 2022-01-15 01:43:32,909 basehttp 154 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:43:32,956 basehttp 154 "GET /admin/ HTTP/1.1" 200 3299
+INFO 2022-01-15 01:45:28,161 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\admin.py changed, reloading.
+INFO 2022-01-15 01:45:29,508 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 01:45:33,480 basehttp 154 "GET /admin/ HTTP/1.1" 200 3993
+INFO 2022-01-15 01:45:55,364 basehttp 154 "GET /admin/home/adscategory/ HTTP/1.1" 200 3238
+INFO 2022-01-15 01:45:55,413 basehttp 154 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2022-01-15 01:45:55,429 basehttp 154 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2022-01-15 01:45:55,442 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 01:45:55,451 basehttp 154 "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+INFO 2022-01-15 01:45:55,453 basehttp 154 "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+INFO 2022-01-15 01:45:55,459 basehttp 154 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+INFO 2022-01-15 01:45:55,462 basehttp 154 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+INFO 2022-01-15 01:45:55,467 basehttp 154 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+INFO 2022-01-15 01:45:55,490 basehttp 154 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2022-01-15 01:45:55,505 basehttp 154 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+INFO 2022-01-15 01:45:55,547 basehttp 154 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2022-01-15 01:46:00,546 basehttp 154 "GET /admin/home/adscategory/add/ HTTP/1.1" 200 5498
+INFO 2022-01-15 01:46:00,590 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 01:46:00,596 basehttp 154 "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+INFO 2022-01-15 01:46:00,605 basehttp 154 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO 2022-01-15 01:46:00,605 basehttp 154 "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO 2022-01-15 01:46:00,616 basehttp 154 "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+INFO 2022-01-15 01:46:00,620 basehttp 154 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+INFO 2022-01-15 01:46:00,626 basehttp 154 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+INFO 2022-01-15 01:46:00,694 basehttp 154 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2022-01-15 01:46:00,694 basehttp 154 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2022-01-15 01:47:56,755 basehttp 154 "POST /admin/home/adscategory/add/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:47:56,817 basehttp 154 "GET /admin/home/adscategory/add/ HTTP/1.1" 200 5755
+INFO 2022-01-15 01:47:56,863 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 01:47:56,909 basehttp 154 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2022-01-15 01:48:15,436 basehttp 154 "POST /admin/home/adscategory/add/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:48:15,480 basehttp 154 "GET /admin/home/adscategory/add/ HTTP/1.1" 200 5755
+INFO 2022-01-15 01:48:15,526 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 01:48:34,213 basehttp 154 "POST /admin/home/adscategory/add/ HTTP/1.1" 302 0
+INFO 2022-01-15 01:48:34,300 basehttp 154 "GET /admin/home/adscategory/ HTTP/1.1" 200 5124
+INFO 2022-01-15 01:48:34,330 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 01:57:56,776 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 01:57:58,472 basehttp 154 "GET / HTTP/1.1" 200 11475
+INFO 2022-01-15 01:58:01,076 basehttp 154 "GET /writead/ HTTP/1.1" 200 4386
+INFO 2022-01-15 02:00:12,336 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 02:17:17,126 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 02:27:02,655 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 02:27:04,175 basehttp 154 "GET / HTTP/1.1" 200 11475
+INFO 2022-01-15 02:27:08,384 basehttp 154 "GET /writead/ HTTP/1.1" 200 5199
+INFO 2022-01-15 02:32:02,476 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/icons.png?t=I3I8 HTTP/1.1" 200 12421
+WARNING 2022-01-15 02:33:03,677 base 102 Method Not Allowed (POST): /writead/
+WARNING 2022-01-15 02:33:03,677 log 228 Method Not Allowed: /writead/
+WARNING 2022-01-15 02:33:03,678 basehttp 154 "POST /writead/ HTTP/1.1" 405 0
+INFO 2022-01-15 02:44:26,653 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 02:44:28,659 basehttp 154 "GET / HTTP/1.1" 200 11475
+INFO 2022-01-15 02:44:35,239 basehttp 154 "GET /writead/ HTTP/1.1" 200 5199
+INFO 2022-01-15 02:48:24,588 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/pastefromword/filter/default.js?t=I3I8 HTTP/1.1" 200 25945
+WARNING 2022-01-15 02:48:52,869 log 228 Bad Request: /writead/
+WARNING 2022-01-15 02:48:52,870 basehttp 154 "POST /writead/ HTTP/1.1" 400 36
+INFO 2022-01-15 02:50:46,125 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\models.py changed, reloading.
+INFO 2022-01-15 02:50:47,168 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-01-15 02:50:47,486 log 228 Bad Request: /writead/
+WARNING 2022-01-15 02:50:47,486 basehttp 154 "POST /writead/ HTTP/1.1" 400 36
+INFO 2022-01-15 02:51:40,315 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\models.py changed, reloading.
+INFO 2022-01-15 02:51:41,547 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-01-15 02:51:42,095 views 344 (1048, "Column 'adid' cannot be null")
+WARNING 2022-01-15 02:51:42,099 log 228 Bad Request: /writead/
+WARNING 2022-01-15 02:51:42,099 basehttp 154 "POST /writead/ HTTP/1.1" 400 36
+INFO 2022-01-15 02:52:42,146 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\models.py changed, reloading.
+INFO 2022-01-15 02:52:43,941 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-01-15 02:52:46,074 views 344 (1048, "Column 'adid' cannot be null")
+WARNING 2022-01-15 02:52:46,076 log 228 Bad Request: /writead/
+WARNING 2022-01-15 02:52:46,077 basehttp 154 "POST /writead/ HTTP/1.1" 400 36
+INFO 2022-01-15 02:53:16,142 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-15 02:53:16,163 basehttp 154 "GET / HTTP/1.1" 200 11475
+INFO 2022-01-15 03:07:13,471 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 03:07:15,609 basehttp 154 "GET / HTTP/1.1" 200 11715
+INFO 2022-01-15 03:07:28,269 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 11715
+INFO 2022-01-15 03:07:29,389 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 11715
+INFO 2022-01-15 03:07:30,283 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11715
+INFO 2022-01-15 03:07:36,981 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 11715
+INFO 2022-01-15 03:07:37,475 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 11715
+INFO 2022-01-15 03:25:54,780 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 03:25:56,603 basehttp 154 "GET / HTTP/1.1" 200 5095
+INFO 2022-01-15 03:25:56,701 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 200 74895
+INFO 2022-01-15 03:26:49,963 basehttp 154 "GET / HTTP/1.1" 200 5109
+INFO 2022-01-15 03:26:51,443 basehttp 154 "GET / HTTP/1.1" 200 5109
+INFO 2022-01-15 03:27:40,215 basehttp 154 "GET / HTTP/1.1" 200 5137
+INFO 2022-01-15 03:28:09,934 basehttp 154 "GET / HTTP/1.1" 200 5178
+INFO 2022-01-15 03:28:19,176 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 3928
+INFO 2022-01-15 03:28:20,184 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 3928
+INFO 2022-01-15 03:28:20,835 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 5178
+INFO 2022-01-15 03:36:27,840 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 03:36:29,738 basehttp 154 "GET / HTTP/1.1" 200 5178
+INFO 2022-01-15 03:36:29,802 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:37:00,790 basehttp 154 "GET / HTTP/1.1" 200 5257
+INFO 2022-01-15 03:42:13,522 basehttp 154 "GET / HTTP/1.1" 200 5174
+INFO 2022-01-15 03:42:13,556 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:42:56,002 basehttp 154 "GET / HTTP/1.1" 200 5178
+INFO 2022-01-15 03:43:47,402 basehttp 154 "GET / HTTP/1.1" 200 5191
+INFO 2022-01-15 03:44:28,227 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 03:44:30,892 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 03:44:44,568 basehttp 154 "GET / HTTP/1.1" 200 5191
+INFO 2022-01-15 03:44:47,690 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 03:46:29,225 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 03:51:04,251 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-15 03:51:04,268 basehttp 154 "GET / HTTP/1.1" 200 6448
+INFO 2022-01-15 03:51:04,342 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:51:04,350 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 200 183044
+INFO 2022-01-15 03:51:15,970 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 03:54:45,804 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-15 03:54:45,854 basehttp 154 "GET / HTTP/1.1" 200 7705
+INFO 2022-01-15 03:54:45,911 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:54:45,919 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 200 183076
+INFO 2022-01-15 03:54:47,757 basehttp 154 "GET / HTTP/1.1" 200 7705
+INFO 2022-01-15 03:54:47,792 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:55:00,395 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 03:55:22,837 basehttp 154 "GET / HTTP/1.1" 200 7705
+INFO 2022-01-15 03:55:22,908 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 03:55:22,916 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 15:52:25,788 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 15:52:30,749 basehttp 154 "GET / HTTP/1.1" 200 7705
+INFO 2022-01-15 15:52:30,826 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 15:52:30,827 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 15:52:30,828 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 15:53:59,589 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 16:02:42,397 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-15 16:02:42,436 basehttp 154 "GET / HTTP/1.1" 200 8921
+INFO 2022-01-15 16:02:42,493 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 200 68134
+INFO 2022-01-15 16:02:51,231 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+WARNING 2022-01-15 16:16:47,099 log 228 Not Found: /detail/
+WARNING 2022-01-15 16:16:47,100 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 404 3464
+INFO 2022-01-15 18:20:17,969 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 18:20:26,861 basehttp 154 "GET / HTTP/1.1" 200 9004
+INFO 2022-01-15 18:20:26,977 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:20:26,977 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:20:26,977 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:20:26,981 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+WARNING 2022-01-15 18:22:04,929 log 228 Not Found: /predict.html
+WARNING 2022-01-15 18:22:04,930 basehttp 154 "GET /predict.html HTTP/1.1" 404 3474
+INFO 2022-01-15 18:24:00,323 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\users\urls.py changed, reloading.
+INFO 2022-01-15 18:24:02,622 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-01-15 18:27:08,111 log 228 Not Found: /predict.html
+WARNING 2022-01-15 18:27:08,111 basehttp 154 "GET /predict.html HTTP/1.1" 404 3474
+INFO 2022-01-15 18:27:10,664 basehttp 154 "GET / HTTP/1.1" 200 9004
+WARNING 2022-01-15 18:27:12,455 log 228 Not Found: /predict.html
+WARNING 2022-01-15 18:27:12,456 basehttp 154 "GET /predict.html HTTP/1.1" 404 3474
+INFO 2022-01-15 18:28:59,625 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-15 18:29:02,769 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 18:32:03,373 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 18:32:06,861 basehttp 154 "GET / HTTP/1.1" 200 9004
+INFO 2022-01-15 18:32:06,994 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:32:07,046 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:32:07,047 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:32:21,239 basehttp 154 "GET / HTTP/1.1" 200 9004
+WARNING 2022-01-15 18:32:24,041 log 228 Not Found: /predict.html
+WARNING 2022-01-15 18:32:24,041 basehttp 154 "GET /predict.html HTTP/1.1" 404 3814
+INFO 2022-01-15 18:32:46,143 basehttp 154 "GET /detail/ HTTP/1.1" 200 5427
+WARNING 2022-01-15 18:32:46,205 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 18:32:46,674 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 18:32:46,771 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+WARNING 2022-01-15 18:33:03,604 log 228 Not Found: /predict.html
+WARNING 2022-01-15 18:33:03,605 basehttp 154 "GET /predict.html HTTP/1.1" 404 3814
+INFO 2022-01-15 18:33:26,637 basehttp 154 "GET /predict/ HTTP/1.1" 200 4415
+WARNING 2022-01-15 18:33:26,693 log 228 Not Found: /predict/md_css/monokai.css
+WARNING 2022-01-15 18:33:26,697 log 228 Not Found: /predict/bootstrap/css/bootstrap.min.css
+WARNING 2022-01-15 18:33:26,700 log 228 Not Found: /predict/js/vue-2.5.16.js
+WARNING 2022-01-15 18:33:26,701 basehttp 154 "GET /predict/md_css/monokai.css HTTP/1.1" 404 3856
+WARNING 2022-01-15 18:33:26,703 basehttp 154 "GET /predict/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3895
+WARNING 2022-01-15 18:33:26,703 basehttp 154 "GET /predict/js/vue-2.5.16.js HTTP/1.1" 404 3850
+WARNING 2022-01-15 18:33:26,705 log 228 Not Found: /predict/js/axios-0.18.0.min.js
+WARNING 2022-01-15 18:33:26,711 basehttp 154 "GET /predict/js/axios-0.18.0.min.js HTTP/1.1" 404 3868
+WARNING 2022-01-15 18:33:26,715 log 228 Not Found: /predict/ckeditor/ckeditor/ckeditor.js
+WARNING 2022-01-15 18:33:26,716 basehttp 154 "GET /predict/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 404 3889
+WARNING 2022-01-15 18:33:26,725 log 228 Not Found: /predict/ckeditor/ckeditor-init.js
+WARNING 2022-01-15 18:33:26,731 basehttp 154 "GET /predict/ckeditor/ckeditor-init.js HTTP/1.1" 404 3877
+WARNING 2022-01-15 18:33:26,734 log 228 Not Found: /predict/js/common.js
+WARNING 2022-01-15 18:33:26,734 basehttp 154 "GET /predict/js/common.js HTTP/1.1" 404 3838
+WARNING 2022-01-15 18:33:26,737 log 228 Not Found: /predict/js/host.js
+WARNING 2022-01-15 18:33:26,739 log 228 Not Found: /predict/js/write_blog.js
+WARNING 2022-01-15 18:33:26,740 basehttp 154 "GET /predict/js/host.js HTTP/1.1" 404 3832
+WARNING 2022-01-15 18:33:26,741 basehttp 154 "GET /predict/js/write_blog.js HTTP/1.1" 404 3850
+WARNING 2022-01-15 18:33:26,808 log 228 Not Found: /predict/ckeditor/ckeditor/ckeditor.js
+WARNING 2022-01-15 18:33:26,809 basehttp 154 "GET /predict/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 404 3889
+WARNING 2022-01-15 18:33:26,819 log 228 Not Found: /predict/js/host.js
+WARNING 2022-01-15 18:33:26,819 basehttp 154 "GET /predict/js/host.js HTTP/1.1" 404 3832
+WARNING 2022-01-15 18:33:26,832 log 228 Not Found: /predict/js/common.js
+WARNING 2022-01-15 18:33:26,833 basehttp 154 "GET /predict/js/common.js HTTP/1.1" 404 3838
+WARNING 2022-01-15 18:33:26,850 log 228 Not Found: /predict/js/write_blog.js
+WARNING 2022-01-15 18:33:26,850 basehttp 154 "GET /predict/js/write_blog.js HTTP/1.1" 404 3850
+INFO 2022-01-15 18:35:47,937 basehttp 154 "GET /predict/ HTTP/1.1" 200 5004
+INFO 2022-01-15 18:37:14,743 basehttp 154 "GET / HTTP/1.1" 200 8999
+INFO 2022-01-15 18:37:14,784 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 18:37:22,238 basehttp 154 "GET /predict/ HTTP/1.1" 200 4999
+INFO 2022-01-15 18:38:03,105 basehttp 154 "GET /predict/ HTTP/1.1" 200 4585
+INFO 2022-01-15 18:38:50,508 basehttp 154 "GET /predict/ HTTP/1.1" 200 4610
+INFO 2022-01-15 18:39:16,641 basehttp 154 "GET /predict/ HTTP/1.1" 200 4622
+INFO 2022-01-15 18:40:21,920 basehttp 154 "GET /predict/ HTTP/1.1" 200 3617
+INFO 2022-01-15 18:41:22,705 basehttp 154 "GET /predict/ HTTP/1.1" 200 3679
+INFO 2022-01-15 18:41:23,841 basehttp 154 "GET /predict/ HTTP/1.1" 200 3679
+INFO 2022-01-15 18:42:27,474 basehttp 154 "GET /predict/ HTTP/1.1" 200 3934
+INFO 2022-01-15 18:42:53,517 basehttp 154 "GET /predict/ HTTP/1.1" 200 3851
+INFO 2022-01-15 18:43:13,141 basehttp 154 "GET /predict/ HTTP/1.1" 200 3851
+WARNING 2022-01-15 18:43:17,501 base 102 Method Not Allowed (POST): /predict/
+WARNING 2022-01-15 18:43:17,504 log 228 Method Not Allowed: /predict/
+WARNING 2022-01-15 18:43:17,505 basehttp 154 "POST /predict/ HTTP/1.1" 405 0
+INFO 2022-01-15 18:43:23,593 basehttp 154 "GET /predict/ HTTP/1.1" 200 3851
+INFO 2022-01-15 18:45:31,200 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 18:45:42,561 basehttp 154 "GET /predict/ HTTP/1.1" 200 3889
+INFO 2022-01-15 18:45:57,930 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 18:53:22,385 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 18:53:26,139 basehttp 154 "GET / HTTP/1.1" 200 8999
+INFO 2022-01-15 18:53:26,220 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+ERROR 2022-01-15 18:54:08,583 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'home.detail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py", line 38, in get
+    return render(request, 'index.html',context=context)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'home.detail', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2022-01-15 18:54:08,596 basehttp 154 "GET / HTTP/1.1" 500 188358
+INFO 2022-01-15 18:54:45,663 basehttp 154 "GET / HTTP/1.1" 200 9027
+INFO 2022-01-15 18:56:31,164 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 18:56:33,027 basehttp 154 "GET / HTTP/1.1" 200 9027
+INFO 2022-01-15 18:56:33,087 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 19:00:20,970 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:00:21,972 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:00:22,993 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:00:23,681 basehttp 154 "GET /detail/ HTTP/1.1" 200 954
+INFO 2022-01-15 19:00:23,758 basehttp 154 "GET /static/img/404.jpg HTTP/1.1" 200 11429
+INFO 2022-01-15 19:00:26,061 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:00:27,384 basehttp 154 "GET /detail/ HTTP/1.1" 200 954
+INFO 2022-01-15 19:00:28,621 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:00:30,513 basehttp 154 "GET /detail/ HTTP/1.1" 200 954
+INFO 2022-01-15 19:00:31,850 basehttp 154 "GET / HTTP/1.1" 200 9055
+INFO 2022-01-15 19:02:49,443 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:02:50,533 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 6235
+WARNING 2022-01-15 19:02:50,594 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:02:50,954 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:02:51,161 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:02:56,971 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 6235
+WARNING 2022-01-15 19:02:57,059 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:02:57,464 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:02:57,564 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:04:45,011 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:04:46,090 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 6236
+WARNING 2022-01-15 19:04:46,168 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:04:46,546 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:04:46,621 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:04:49,681 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 6236
+WARNING 2022-01-15 19:04:49,767 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:04:50,101 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:04:50,227 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:05:18,534 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-15 19:05:21,756 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:05:23,120 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 7533
+WARNING 2022-01-15 19:05:23,189 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:23,579 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:23,648 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:05:47,534 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 9692
+WARNING 2022-01-15 19:05:47,594 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:47,910 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:47,986 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:05:59,273 basehttp 154 "GET /detail/?id=1 HTTP/1.1" 200 9807
+WARNING 2022-01-15 19:05:59,323 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:59,664 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:05:59,728 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:06:08,774 basehttp 154 "GET /detail/?id=2 HTTP/1.1" 200 9940
+WARNING 2022-01-15 19:06:08,811 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:06:09,075 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:06:09,173 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:06:56,759 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:06:59,989 basehttp 154 "GET /detail/?id=2 HTTP/1.1" 200 10910
+WARNING 2022-01-15 19:07:00,039 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:07:00,273 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:07:00,339 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:07:13,531 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 4006
+INFO 2022-01-15 19:07:14,470 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 9075
+INFO 2022-01-15 19:07:16,606 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:07:22,543 basehttp 154 "GET /center/ HTTP/1.1" 200 3601
+INFO 2022-01-15 19:07:22,585 basehttp 154 "GET /static/img/avatar.jpg HTTP/1.1" 200 25249
+INFO 2022-01-15 19:07:24,264 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 19:07:27,055 basehttp 154 "GET /writead/ HTTP/1.1" 200 5495
+INFO 2022-01-15 19:07:32,107 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:24:30,019 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:24:52,239 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:24:54,941 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:24:55,207 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 19:24:59,662 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 10666
+WARNING 2022-01-15 19:24:59,719 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:25:00,117 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:25:00,196 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:27:05,790 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:27:07,969 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:27:18,959 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 10666
+WARNING 2022-01-15 19:27:18,987 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:19,152 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:19,198 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:27:22,645 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js?t=I3I8 HTTP/1.1" 200 3463
+INFO 2022-01-15 19:27:22,678 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/regular_smile.png HTTP/1.1" 200 1084
+INFO 2022-01-15 19:27:22,683 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 200 1114
+INFO 2022-01-15 19:27:22,684 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 200 1115
+INFO 2022-01-15 19:27:22,685 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 200 1183
+INFO 2022-01-15 19:27:22,686 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/confused_smile.png HTTP/1.1" 200 1101
+INFO 2022-01-15 19:27:22,686 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/omg_smile.png HTTP/1.1" 200 1122
+INFO 2022-01-15 19:27:22,688 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png HTTP/1.1" 200 1039
+INFO 2022-01-15 19:27:22,695 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png HTTP/1.1" 200 1204
+INFO 2022-01-15 19:27:22,701 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 200 1220
+INFO 2022-01-15 19:27:22,704 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.png HTTP/1.1" 200 985
+INFO 2022-01-15 19:27:22,705 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png HTTP/1.1" 200 959
+INFO 2022-01-15 19:27:22,705 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/envelope.png HTTP/1.1" 200 760
+INFO 2022-01-15 19:27:22,709 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 200 1220
+INFO 2022-01-15 19:27:22,713 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/lightbulb.png HTTP/1.1" 200 919
+INFO 2022-01-15 19:27:22,713 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/heart.png HTTP/1.1" 200 999
+INFO 2022-01-15 19:27:22,713 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/kiss.png HTTP/1.1" 200 1003
+INFO 2022-01-15 19:27:22,719 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/broken_heart.png HTTP/1.1" 200 1139
+INFO 2022-01-15 19:27:25,049 basehttp 154 "POST /detail/?id=3 HTTP/1.1" 302 0
+INFO 2022-01-15 19:27:25,100 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 11265
+WARNING 2022-01-15 19:27:25,142 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:25,316 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:25,350 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:27:31,560 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-15 19:27:31,599 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:27:32,373 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-15 19:27:39,169 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-01-15 19:27:39,206 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:27:40,815 basehttp 154 "GET /detail/?id=1 HTTP/1.1" 200 10781
+WARNING 2022-01-15 19:27:40,850 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:41,026 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:41,072 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:27:46,150 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 11265
+WARNING 2022-01-15 19:27:46,182 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:46,381 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:27:46,425 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:27:53,144 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:28:15,915 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 19:29:32,277 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:29:37,608 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-01-15 19:29:37,827 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1975
+INFO 2022-01-15 19:29:37,868 basehttp 154 "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+INFO 2022-01-15 19:29:45,284 basehttp 154 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-01-15 19:29:45,339 basehttp 154 "GET /admin/ HTTP/1.1" 200 4968
+INFO 2022-01-15 19:30:50,111 basehttp 154 "GET /admin/ HTTP/1.1" 200 4968
+INFO 2022-01-15 19:30:56,892 basehttp 154 "GET /admin/home/adscategory/ HTTP/1.1" 200 4914
+INFO 2022-01-15 19:30:56,953 basehttp 154 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2022-01-15 19:30:56,958 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:30:56,980 basehttp 154 "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+INFO 2022-01-15 19:30:56,986 basehttp 154 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+INFO 2022-01-15 19:30:56,987 basehttp 154 "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+INFO 2022-01-15 19:30:57,001 basehttp 154 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+INFO 2022-01-15 19:30:57,006 basehttp 154 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+INFO 2022-01-15 19:30:57,053 basehttp 154 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2022-01-15 19:30:57,067 basehttp 154 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+INFO 2022-01-15 19:30:58,786 basehttp 154 "GET /admin/ HTTP/1.1" 200 4968
+INFO 2022-01-15 19:31:39,457 basehttp 154 "GET /admin/ HTTP/1.1" 200 4968
+INFO 2022-01-15 19:31:48,387 basehttp 154 "GET /admin/users/user/ HTTP/1.1" 200 4813
+INFO 2022-01-15 19:31:48,442 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:31:50,818 basehttp 154 "GET /admin/ HTTP/1.1" 200 4968
+INFO 2022-01-15 19:34:20,730 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\admin.py changed, reloading.
+INFO 2022-01-15 19:34:25,101 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 19:34:26,318 basehttp 154 "GET /admin/ HTTP/1.1" 200 5825
+INFO 2022-01-15 19:34:31,432 basehttp 154 "GET /admin/home/ad/ HTTP/1.1" 200 5548
+INFO 2022-01-15 19:34:31,502 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:34:33,926 basehttp 154 "GET /admin/home/ad/4/change/ HTTP/1.1" 200 14684
+INFO 2022-01-15 19:34:34,002 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:34:34,026 basehttp 154 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+INFO 2022-01-15 19:34:34,045 basehttp 154 "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+INFO 2022-01-15 19:34:34,050 basehttp 154 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+INFO 2022-01-15 19:34:34,100 basehttp 154 "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO 2022-01-15 19:34:34,104 basehttp 154 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO 2022-01-15 19:34:34,315 basehttp 154 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2022-01-15 19:34:34,315 basehttp 154 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2022-01-15 19:34:42,775 basehttp 154 "GET /admin/home/ad/ HTTP/1.1" 200 5548
+INFO 2022-01-15 19:34:44,541 basehttp 154 "GET /admin/home/ad/2/change/ HTTP/1.1" 200 17672
+INFO 2022-01-15 19:34:44,636 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:34:54,276 basehttp 154 "GET /admin/home/ad/ HTTP/1.1" 200 5548
+INFO 2022-01-15 19:34:59,189 basehttp 154 "GET /admin/home/ad/2/change/ HTTP/1.1" 200 17672
+INFO 2022-01-15 19:34:59,243 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-15 19:35:08,575 basehttp 154 "GET /admin/home/ad/ HTTP/1.1" 200 5548
+INFO 2022-01-15 19:35:12,330 basehttp 154 "GET /admin/ HTTP/1.1" 200 5825
+INFO 2022-01-15 19:44:30,384 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:44:34,171 basehttp 154 "GET /predict/ HTTP/1.1" 200 4448
+WARNING 2022-01-15 19:44:41,875 base 102 Method Not Allowed (POST): /predict/
+WARNING 2022-01-15 19:44:41,877 log 228 Method Not Allowed: /predict/
+WARNING 2022-01-15 19:44:41,877 basehttp 154 "POST /predict/ HTTP/1.1" 405 0
+INFO 2022-01-15 19:44:47,307 basehttp 154 "GET /predict/ HTTP/1.1" 200 4448
+INFO 2022-01-15 19:46:43,026 basehttp 154 "GET /predict/ HTTP/1.1" 200 4448
+INFO 2022-01-15 19:46:57,519 basehttp 154 "GET /predict/ HTTP/1.1" 200 4448
+INFO 2022-01-15 19:47:00,005 basehttp 154 "GET /predict/ HTTP/1.1" 200 7235
+INFO 2022-01-15 19:47:00,735 basehttp 154 "GET /predict/ HTTP/1.1" 200 7235
+INFO 2022-01-15 19:47:01,353 basehttp 154 "GET /predict/ HTTP/1.1" 200 7235
+INFO 2022-01-15 19:49:35,321 basehttp 154 "GET /predict/ HTTP/1.1" 200 7223
+INFO 2022-01-15 19:49:37,957 basehttp 154 "GET /predict/ HTTP/1.1" 200 6470
+INFO 2022-01-15 19:49:47,635 basehttp 154 "GET /predict/ HTTP/1.1" 200 6470
+INFO 2022-01-15 19:49:48,750 basehttp 154 "GET /predict/ HTTP/1.1" 200 6432
+INFO 2022-01-15 19:50:58,661 basehttp 154 "GET /predict/ HTTP/1.1" 200 7572
+INFO 2022-01-15 19:52:02,048 basehttp 154 "GET /predict/ HTTP/1.1" 200 7572
+INFO 2022-01-15 19:52:03,515 basehttp 154 "GET /predict/ HTTP/1.1" 200 5456
+INFO 2022-01-15 19:53:03,947 basehttp 154 "GET /predict/ HTTP/1.1" 200 5323
+INFO 2022-01-15 19:56:29,029 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-15 19:56:29,079 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 19:56:29,178 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 19:56:30,881 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 8507
+WARNING 2022-01-15 19:56:30,916 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:56:31,177 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:56:31,229 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 19:56:51,134 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 11265
+WARNING 2022-01-15 19:56:51,161 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:56:51,393 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 19:56:51,420 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 20:15:09,774 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 11266
+WARNING 2022-01-15 20:15:09,799 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:15:09,990 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:15:10,021 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 20:15:14,386 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 20:15:14,423 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 20:15:14,432 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 20:15:14,432 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 20:15:16,327 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-15 20:15:20,094 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-15 20:15:24,563 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-15 20:15:35,140 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-01-15 20:15:35,169 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 20:15:40,845 basehttp 154 "GET /predict/ HTTP/1.1" 200 5329
+INFO 2022-01-15 20:15:53,566 basehttp 154 "GET /predict/ HTTP/1.1" 200 5329
+INFO 2022-01-15 20:16:18,569 basehttp 154 "GET /predict/ HTTP/1.1" 200 5329
+INFO 2022-01-15 20:16:19,174 basehttp 154 "GET /predict/ HTTP/1.1" 200 5329
+INFO 2022-01-15 20:17:38,926 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 20:17:40,420 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 20:17:41,833 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 20:17:43,391 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 20:20:34,321 basehttp 154 "GET / HTTP/1.1" 200 9075
+INFO 2022-01-15 20:20:34,398 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-15 20:20:37,742 basehttp 154 "GET / HTTP/1.1" 200 9229
+INFO 2022-01-15 20:20:38,983 basehttp 154 "GET /predict/ HTTP/1.1" 200 3890
+INFO 2022-01-15 20:21:36,875 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 8508
+WARNING 2022-01-15 20:21:36,929 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:21:37,205 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+INFO 2022-01-15 20:21:37,230 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/hidpi/codesnippet.png?t=I3I8 HTTP/1.1" 200 1887
+WARNING 2022-01-15 20:21:37,262 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 20:22:18,458 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 8588
+WARNING 2022-01-15 20:22:18,488 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:22:18,623 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:22:18,647 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 20:22:19,134 basehttp 154 "GET /detail/?id=4 HTTP/1.1" 200 8588
+WARNING 2022-01-15 20:22:19,163 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:22:19,291 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-15 20:22:19,321 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-15 20:22:19,830 basehttp 154 "GET /predict/ HTTP/1.1" 200 3816
+INFO 2022-01-15 20:22:21,256 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:22:23,305 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-15 20:22:24,698 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:22:25,961 basehttp 154 "GET /center/ HTTP/1.1" 200 3548
+INFO 2022-01-15 20:22:25,983 basehttp 154 "GET /meida/avatar/20224401/08/22/timg.jfif HTTP/1.1" 304 0
+INFO 2022-01-15 20:22:27,110 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:22:28,131 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 4082
+INFO 2022-01-15 20:22:28,780 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 4082
+INFO 2022-01-15 20:22:29,219 basehttp 154 "GET /predict/ HTTP/1.1" 200 3816
+INFO 2022-01-15 20:22:30,101 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:22:50,445 basehttp 154 "GET /predict/ HTTP/1.1" 200 3816
+INFO 2022-01-15 20:32:53,535 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+WARNING 2022-01-15 20:33:00,916 base 102 Method Not Allowed (POST): /predict/
+WARNING 2022-01-15 20:33:00,917 log 228 Method Not Allowed: /predict/
+WARNING 2022-01-15 20:33:00,917 basehttp 154 "POST /predict/ HTTP/1.1" 405 0
+INFO 2022-01-15 20:33:07,316 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:36:28,488 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:36:29,073 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-15 20:36:30,044 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 20:36:30,426 basehttp 154 "POST /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:36:32,167 basehttp 154 "POST /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:36:33,671 basehttp 154 "POST /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:36:39,454 basehttp 154 "POST /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:39:42,208 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-15 20:39:43,284 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-15 20:39:43,761 basehttp 154 "POST /predict/ HTTP/1.1" 200 3801
+INFO 2022-01-15 20:39:50,196 basehttp 154 "POST /predict/ HTTP/1.1" 200 3801
+INFO 2022-01-15 20:39:52,075 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:39:53,144 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:40:00,283 basehttp 154 "POST /predict/ HTTP/1.1" 200 3801
+INFO 2022-01-15 20:40:22,545 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-15 20:41:15,727 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-15 20:41:24,630 basehttp 154 "POST /predict/ HTTP/1.1" 200 3801
+INFO 2022-01-16 01:35:20,158 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 01:35:22,280 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-16 01:35:22,344 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:35:22,345 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:35:22,345 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:35:22,346 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:35:27,785 basehttp 154 "GET /predict/ HTTP/1.1" 200 3796
+INFO 2022-01-16 01:35:35,068 basehttp 154 "POST /predict/ HTTP/1.1" 200 3801
+INFO 2022-01-16 01:35:36,754 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-16 01:35:39,460 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 01:36:20,193 basehttp 154 "GET / HTTP/1.1" 200 9151
+INFO 2022-01-16 01:36:23,386 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 01:39:59,320 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/link/dialogs/anchor.js?t=I3I8 HTTP/1.1" 200 1828
+INFO 2022-01-16 01:40:58,485 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-16 01:40:58,523 basehttp 154 "GET / HTTP/1.1" 200 10414
+INFO 2022-01-16 01:40:58,570 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 200 120616
+INFO 2022-01-16 01:41:04,815 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+ERROR 2022-01-16 01:44:50,558 views 346 invalid literal for int() with base 10: '45000.0'
+WARNING 2022-01-16 01:44:50,559 log 228 Bad Request: /writead/
+WARNING 2022-01-16 01:44:50,559 basehttp 154 "POST /writead/ HTTP/1.1" 400 36
+INFO 2022-01-16 01:45:08,901 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-16 01:45:08,944 basehttp 154 "GET / HTTP/1.1" 200 11702
+INFO 2022-01-16 01:45:08,991 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:45:08,993 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 200 151279
+INFO 2022-01-16 01:45:25,699 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 01:49:20,150 basehttp 154 "POST /writead/ HTTP/1.1" 302 0
+INFO 2022-01-16 01:49:20,190 basehttp 154 "GET / HTTP/1.1" 200 11743
+INFO 2022-01-16 01:49:20,251 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:49:20,255 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:49:20,260 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 200 116898
+INFO 2022-01-16 01:49:23,287 basehttp 154 "GET /?cat_id=1&page_size=6&page_num=2 HTTP/1.1" 200 5364
+INFO 2022-01-16 01:49:25,038 basehttp 154 "GET /?cat_id=1&page_size=6&page_num=1 HTTP/1.1" 200 11743
+INFO 2022-01-16 01:49:25,070 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:49:32,474 basehttp 154 "GET /detail/?id=7 HTTP/1.1" 200 10715
+WARNING 2022-01-16 01:49:32,504 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 01:49:32,674 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 01:49:32,707 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-16 01:49:46,737 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11743
+INFO 2022-01-16 01:49:46,765 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:49:46,775 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:49:51,863 basehttp 154 "GET /detail/ HTTP/1.1" 200 954
+INFO 2022-01-16 01:49:51,895 basehttp 154 "GET /static/img/404.jpg HTTP/1.1" 200 11429
+INFO 2022-01-16 01:49:53,847 basehttp 154 "GET / HTTP/1.1" 200 11743
+INFO 2022-01-16 01:49:53,870 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:51:43,470 basehttp 154 "GET / HTTP/1.1" 200 11749
+INFO 2022-01-16 01:51:43,499 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:51:43,500 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:51:43,510 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+ERROR 2022-01-16 01:51:44,695 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py", line 15, in get
+    category=AdsCategory.objects.get(id=cat_id)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\Yan Tszyafen\AppData\Local\Programs\Python\Python37\Scripts\blog\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2022-01-16 01:51:44,698 basehttp 154 "GET /?cat_id= HTTP/1.1" 500 145034
+INFO 2022-01-16 01:52:05,660 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:05,701 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:52:06,412 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:08,555 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:09,671 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:11,236 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:17,640 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:29,024 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 01:52:38,192 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 4082
+INFO 2022-01-16 01:52:39,122 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 01:52:39,149 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:52:39,150 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 01:52:40,824 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 01:52:47,444 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 01:54:23,712 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 02:10:59,366 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-16 02:11:00,776 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:15:31,804 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:15:58,801 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:16:01,812 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:16:01,961 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:16:01,963 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:16:01,969 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:16:01,971 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-kubinskaya-ulica-1207803353-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:16:04,394 basehttp 154 "GET /predict/ HTTP/1.1" 200 3822
+INFO 2022-01-16 03:16:38,320 basehttp 154 "POST /predict/ HTTP/1.1" 200 3832
+INFO 2022-01-16 03:17:53,607 basehttp 154 "POST /predict/ HTTP/1.1" 200 3840
+INFO 2022-01-16 03:37:33,805 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:38:23,188 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\admin.py changed, reloading.
+INFO 2022-01-16 03:38:25,184 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:38:37,030 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:38:37,119 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:38:37,120 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:38:37,120 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:38:41,451 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-01-16 03:38:41,508 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1975
+INFO 2022-01-16 03:38:50,752 basehttp 154 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-01-16 03:38:50,784 basehttp 154 "GET /admin/ HTTP/1.1" 200 6272
+INFO 2022-01-16 03:38:53,973 basehttp 154 "GET /admin/home/rpesmodel/ HTTP/1.1" 200 3219
+INFO 2022-01-16 03:38:54,016 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-16 03:38:57,102 basehttp 154 "GET /admin/home/rpesmodel/add/ HTTP/1.1" 200 11514
+INFO 2022-01-16 03:38:57,135 basehttp 154 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO 2022-01-16 03:38:57,136 basehttp 154 "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO 2022-01-16 03:38:57,136 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-16 03:38:57,137 basehttp 154 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+INFO 2022-01-16 03:42:17,276 basehttp 154 "POST /admin/home/rpesmodel/add/ HTTP/1.1" 302 0
+INFO 2022-01-16 03:42:17,336 basehttp 154 "GET /admin/home/rpesmodel/ HTTP/1.1" 200 5364
+INFO 2022-01-16 03:42:17,367 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO 2022-01-16 03:42:17,398 basehttp 154 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2022-01-16 03:50:30,542 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:50:32,400 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:50:32,518 basehttp 154 "GET /meida/imgcian/kvartira-sanktpeterburg-zaozernaya-ulica-1202158835-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:50:32,518 basehttp 154 "GET /meida/imgcian/1204676825-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:50:32,519 basehttp 154 "GET /meida/imgcian/1124242829-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:50:32,519 basehttp 154 "GET /meida/imgcian/1206225273-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:50:32,521 basehttp 154 "GET /meida/imgcian/1124242900-1.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:50:34,780 basehttp 154 "GET /predict/ HTTP/1.1" 200 3822
+INFO 2022-01-16 03:50:53,070 basehttp 154 "POST /predict/ HTTP/1.1" 200 3840
+INFO 2022-01-16 03:54:07,594 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:54:08,947 basehttp 154 "GET /predict/ HTTP/1.1" 200 3994
+INFO 2022-01-16 03:55:01,957 autoreload 203 C:\Users\Yan Tszyafen\Desktop\RPESystem\RPESystem\home\views.py changed, reloading.
+INFO 2022-01-16 03:55:04,056 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-01-16 03:55:04,736 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:55:06,056 basehttp 154 "GET /predict/ HTTP/1.1" 200 3994
+INFO 2022-01-16 03:55:13,506 basehttp 154 "POST /predict/ HTTP/1.1" 200 4042
+INFO 2022-01-16 03:56:18,304 basehttp 154 "POST /predict/ HTTP/1.1" 200 4050
+INFO 2022-01-16 03:57:02,465 basehttp 154 "POST /predict/ HTTP/1.1" 200 4080
+INFO 2022-01-16 03:58:09,092 basehttp 154 "POST /predict/ HTTP/1.1" 200 4099
+INFO 2022-01-16 03:58:22,298 basehttp 154 "POST /predict/ HTTP/1.1" 200 4091
+INFO 2022-01-16 03:59:05,440 basehttp 154 "POST /predict/ HTTP/1.1" 200 4016
+INFO 2022-01-16 03:59:13,109 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:14,310 basehttp 154 "GET /predict/ HTTP/1.1" 200 3976
+INFO 2022-01-16 03:59:15,635 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:16,697 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 4082
+INFO 2022-01-16 03:59:17,362 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 4082
+INFO 2022-01-16 03:59:17,883 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:18,403 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:20,843 basehttp 154 "GET /?cat_id=1&page_size=6&page_num=2 HTTP/1.1" 200 5366
+INFO 2022-01-16 03:59:20,869 basehttp 154 "GET /meida/imgcian/1156436031-1_Ag1bF9S.jpg HTTP/1.1" 304 0
+INFO 2022-01-16 03:59:23,206 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:23,981 basehttp 154 "GET /predict/ HTTP/1.1" 200 3976
+INFO 2022-01-16 03:59:32,989 basehttp 154 "POST /predict/ HTTP/1.1" 200 4024
+INFO 2022-01-16 03:59:40,586 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 03:59:41,879 basehttp 154 "GET /predict/ HTTP/1.1" 200 3976
+INFO 2022-01-16 03:59:56,153 basehttp 154 "GET /predict/ HTTP/1.1" 200 4047
+INFO 2022-01-16 04:00:00,881 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 04:00:05,775 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11755
+INFO 2022-01-16 04:00:31,530 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-01-16 04:00:31,562 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 04:00:32,685 basehttp 154 "GET /login/ HTTP/1.1" 200 2988
+INFO 2022-01-16 04:00:44,240 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-01-16 04:00:44,279 basehttp 154 "GET / HTTP/1.1" 200 11755
+INFO 2022-01-16 04:00:54,058 basehttp 154 "GET /detail/?id=7 HTTP/1.1" 200 10715
+WARNING 2022-01-16 04:00:54,088 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:00:54,268 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:00:54,354 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-16 04:01:04,225 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js?t=I3I8 HTTP/1.1" 200 3463
+INFO 2022-01-16 04:01:04,251 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 200 1115
+INFO 2022-01-16 04:01:04,257 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/confused_smile.png HTTP/1.1" 200 1101
+INFO 2022-01-16 04:01:04,258 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 200 1183
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 200 1114
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/omg_smile.png HTTP/1.1" 200 1122
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 200 1220
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png HTTP/1.1" 200 1039
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png HTTP/1.1" 200 1204
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 200 1220
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.png HTTP/1.1" 200 985
+INFO 2022-01-16 04:01:04,259 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/lightbulb.png HTTP/1.1" 200 919
+INFO 2022-01-16 04:01:04,275 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/heart.png HTTP/1.1" 200 999
+INFO 2022-01-16 04:01:04,277 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/kiss.png HTTP/1.1" 200 1003
+INFO 2022-01-16 04:01:04,278 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/broken_heart.png HTTP/1.1" 200 1139
+INFO 2022-01-16 04:01:04,277 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png HTTP/1.1" 200 959
+INFO 2022-01-16 04:01:04,280 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/smiley/images/envelope.png HTTP/1.1" 200 760
+INFO 2022-01-16 04:01:07,413 basehttp 154 "POST /detail/?id=7 HTTP/1.1" 302 0
+INFO 2022-01-16 04:01:07,465 basehttp 154 "GET /detail/?id=7 HTTP/1.1" 200 11304
+WARNING 2022-01-16 04:01:07,500 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:01:07,655 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:01:07,681 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-16 04:01:15,253 basehttp 154 "GET /detail/?id=3 HTTP/1.1" 200 12131
+WARNING 2022-01-16 04:01:15,279 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:01:15,420 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1810
+WARNING 2022-01-16 04:01:15,445 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1813
+INFO 2022-01-16 04:01:19,636 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 11756
+INFO 2022-01-16 04:01:23,980 basehttp 154 "GET /?cat_id=1&page_size=6&page_num=2 HTTP/1.1" 200 5366
+INFO 2022-01-16 04:01:26,265 basehttp 154 "GET /?cat_id=1&page_size=6&page_num=1 HTTP/1.1" 200 11756
+INFO 2022-01-16 04:01:28,620 basehttp 154 "GET /predict/ HTTP/1.1" 200 4047
+INFO 2022-01-16 04:01:34,661 basehttp 154 "POST /predict/ HTTP/1.1" 200 4095
+INFO 2022-01-16 04:01:45,394 basehttp 154 "GET /writead/ HTTP/1.1" 200 5421
+INFO 2022-01-16 04:01:52,985 basehttp 154 "GET /center/ HTTP/1.1" 200 3548
+INFO 2022-01-16 04:01:57,515 basehttp 154 "GET / HTTP/1.1" 200 11756

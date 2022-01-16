@@ -1,6 +1,6 @@
 #Perform view routing of users sub-applications
 from django.urls import path
-from users.views import RegisterView, ImageCodeView, LoginView, LogoutView, ForgetPasswordView, UserCenterView
+from users.views import RegisterView, ImageCodeView, LoginView, LogoutView, ForgetPasswordView, UserCenterView, WriteAdView
     #, ImageCodeView, LoginView, LogoutView, ForgetPasswordView, UserCenterView
     # , WriteBlogView
 urlpatterns = [
@@ -19,5 +19,6 @@ urlpatterns = [
 
     path('center/', UserCenterView.as_view(), name='center'),
 
-    # path('writeblog/',WriteBlogView.as_view(), name='writeblog'),
+    path('writead/',WriteAdView.as_view(), name='writead'),
+
 ]

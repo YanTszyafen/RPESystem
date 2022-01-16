@@ -294,46 +294,56 @@ class UserCenterView(LoginRequiredMixin, View):
         return response
 
 
-# #from home.models import ArticleCategory,Article
-# class WriteBlogView(LoginRequiredMixin,View):
-#
-#     def get(self,request):
-#         #Query all categories models
-#         categories = ArticleCategory.objects.all()
-#
-#         context = {
-#             'categories':categories
-#         }
-#
-#         return render(request,'write_blog.html',context=context)
-#
-#     def post(self,request):
-#         #1. Recieve data
-#         avatar = request.FILES.get('avatar')
-#         title = request.POST.get('title')
-#         category_id = request.POST.get('category')
-#         content = request.POST.get('content')
-#         author = request.user
-#         # 2. Vertify data
-#         #   2.1 Determine whether the parameters are complete
-#         if not all([avatar,title,category_id,content,author]):
-#             return HttpResponseBadRequest('Missing required parameters!')
-#         #   2.2 Verify category_id
-#         try:
-#             category = ArticleCategory.objects.get(id=category_id)
-#         except ArticleCategory.DoesNotExist:
-#             return HttpResponseBadRequest('No such category!')
-#         # 3. Save data
-#         try:
-#             article = Article.objects.create(
-#                 author=author,
-#                 avatar=avatar,
-#                 title=title,
-#                 category=category,
-#                 content=content
-#             )
-#         except Exception as e:
-#             logger.error(e)
-#             return HttpResponseBadRequest('Post failed, please try again later!')
-#         # 4. Redirect
-#         return redirect(reverse('home:index'))
+from home.models import AdsCategory, Ad
+class WriteAdView(LoginRequiredMixin,View):
+    def get(self,request):
+        #Query all categories models
+        categories = AdsCategory.objects.all()
+
+        context = {
+            'categories':categories
+        }
+
+        return render(request,'write_ads.html',context=context)
+
+    def post(self,request):
+        #1. Recieve data
+        photo = request.FILES.get('photo')
+        title = request.POST.get('title')
+        category_id = request.POST.get('category')
+        description = request.POST.get('description')
+        address = request.POST.get('address')
+        metro = request.POST.get('metro')
+        price = request.POST.get('price')
+        landlord = request.user
+        square = request.POST.get('square')
+        telephone = request.POST.get('telephone')
+        # 2. Vertify data
+        #   2.1 Determine whether the parameters are complete
+        if not all([photo,title,category_id,description,landlord,address,metro,price,square]):
+            return HttpResponseBadRequest('Missing required parameters!')
+        #   2.2 Verify category_id
+        try:
+            category = AdsCategory.objects.get(id=category_id)
+        except AdsCategory.DoesNotExist:
+            return HttpResponseBadRequest('No such category!')
+        # 3. Save data
+        try:
+            pass
+            ad = Ad.objects.create(
+                landlord=landlord,
+                photo=photo,
+                title=title,
+                category=category,
+                description=description,
+                address=address,
+                price=price,
+                metro=metro,
+                square=square,
+                telephone=telephone
+            )
+        except Exception as e:
+            logger.error(e)
+            return HttpResponseBadRequest('Post failed, please try again later!')
+        # 4. Redirect
+        return redirect(reverse('home:index'))
